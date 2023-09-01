@@ -6,8 +6,8 @@ from gologin import GoLogin
 
 async def main():
 	gl = GoLogin({
-		"token": "yU0token",
-		"profile_id": "yU0Pr0f1leiD",
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NGVmMzkzZjBkNDI3NGU5MmNlYTQ1YjkiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2NGYxNmUyMWQ0MWE5MzcwMjQ2ZWYyZmEifQ.BwjEX-nhPDwU07va5DURYQPPDN2hmz5f-W1UlUjTlWM",
+		"profile_id": "64ef393f0d42748ec2ea45ed",
 		})
 
 	debugger_address = gl.start()
