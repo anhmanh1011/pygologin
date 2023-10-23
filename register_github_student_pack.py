@@ -37,6 +37,7 @@ def scrap(profile):
 
     chrome_options = Options()
     chrome_options.add_experimental_option("debuggerAddress", debugger_address)
+    # chrome_options.add_extension(r"C:\\Users\\daoma\\PycharmProjects\\pygologin\\NopeCHA-CAPTCHA-Solver.crx")
     driver = webdriver.Chrome(options=chrome_options)
     mainWindow = driver.current_window_handle;
 
@@ -112,8 +113,8 @@ def scrap(profile):
 
 
 profiles = [
-    {'name': 'profile_id_1', 'profile_path': r'D:\profiles\manh_test1', 'port': 3500},
-    {'name': 'profile_id_2', 'profile_path': r'D:\profiles\manh_test2', 'port': 3501},
+    # {'name': 'profile_id_1', 'profile_path': r'D:\profiles\manh_test1', 'port': 3500},
+    # {'name': 'profile_id_2', 'profile_path': r'D:\profiles\manh_test2', 'port': 3501},
     {'name': 'profile_id_3', 'profile_path': r'D:\profiles\manh_test3', 'port': 3502},
 
 ]
@@ -123,6 +124,6 @@ if __name__ == '__main__':
     #
     # os.system('taskkill /im chrome.exe /f')
     # os.system('taskkill /im chromedriver.exe /f')
-    profile = {'name': 'profile_id_106', 'port': 3500}
+    profile = {'name': "manhtestloadextension453", 'port': 3502}
 
     scrap(profile)

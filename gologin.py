@@ -99,7 +99,7 @@ class GoLogin(object):
             '--password-store=basic',
             '--tz=' + tz,
             '--gologin-profile=' + self.profile_name,
-            '--lang=en-US',
+            '--lang=en-US'
         ]
 
         chromeExtensions = self.profile.get('chromeExtensions')
@@ -455,15 +455,23 @@ class GoLogin(object):
             "navigator": profile_options.get('navigator', {}),
             "profile": json.dumps(profile_options),
             "geolocation": {
-                    "mode": "allow",
-                    "enabled": True,
-                    "customize": True,
-                    "fillBasedOnIp": False,
-                    "isCustomCoordinates": False,
-                    "latitude": 24.76176411847304,
-                    "longitude": 90.39498007665587,
-                    "accuracy": 10
-                }
+                "mode": "allow",
+                "enabled": True,
+                "customize": True,
+                "fillBasedOnIp": False,
+                "isCustomCoordinates": False,
+                "latitude": 24.76176411847304,
+                "longitude": 90.39498007665587,
+                "accuracy": 10
+            },
+            # "extensions": {
+            #     "enabled": True,
+            #     "preloadCustom": True,
+            #     "names": []
+            # },
+            "chromeExtensions": [
+                "dknlfmjaanfblgfdfebhijalfmhmjjjo"
+            ]
         }
 
         if options.get('storage'):
